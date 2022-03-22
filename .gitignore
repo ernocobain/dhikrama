@@ -2,8 +2,5 @@ node_modules/
 tailwind.config.js
 package.json
 package-lock.json
-main.go
-go.mod
-go.sum
 input.css
 tmp/
