@@ -1,0 +1,40 @@
+<header class="text-gray-600 body-font flex">
+  <div class="container sm:mx-auto flex flex-wrap p-5  justify-between items-center">
+    <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round"
+        stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full"
+        viewBox="0 0 24 24">
+        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+      </svg>
+      <span class="ml-3 text-xl ">Dhikrama Web</span>
+    </a>
+
+    <nav class="hidden md:block absolute left-0 top-0 md:relative ">
+      <ul
+        class="h-screen w-48 md:h-auto md:w-auto bg-slate-100 md:bg-transparent md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400 md:flex md:flex-wrap  items-center text-base justify-center">
+        <li class="nav-link md:border-b-4 md:border-b-yellow-500 ml-2"><a href="/" class="md:hover:text-yellow-500 ">Home</a></li>
+        <li class="nav-link md:border-b-4 md:border-b-yellow-500 ml-2"><a href="/about" class="md:hover:text-yellow-500 ">About</a></li>
+        <li class="nav-link md:border-b-4 md:border-b-yellow-500 ml-2"><a href="/contact" class="md:hover:text-yellow-500 ">Contact</a></li>
+        <li class="nav-link md:border-b-4 md:border-b-yellow-500 ml-2"><a href="#" class="md:hover:text-yellow-500 ">Blog</a></li>
+      </ul>
+    </nav>
+
+    <button
+      class="hidden md:inline-flex md:ml-auto items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Button
+      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+        class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+        <path d="M5 12h14M12 5l7 7-7 7"></path>
+      </svg>
+    </button>
+  </div>
+  <div class="burger m-3">
+    <div class="p-4 space-y-2  bg-gray-600 rounded shadow sm:hidden">
+      <span class="block w-8 h-0.5 bg-yellow-500 transform transition duration-500 ease-in-out"
+        :class="{'rotate-45': open,' -translate-y-1.5': !open }"></span>
+      <span class="block w-8 h-0.5 bg-yellow-600 transform transition duration-500 ease-in-out"
+        :class="{'opacity-0': open }"></span>
+      <span class="block w-8 h-0.5 bg-yellow-600 transform transition duration-500 ease-in-out"
+        :class="{'-rotate-45': open, ' translate-y-1.5': !open}"></span>
+    </div>
+  </div>
+</header>
